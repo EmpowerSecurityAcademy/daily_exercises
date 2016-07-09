@@ -1,7 +1,8 @@
 
-#take in a list, and remove any charachters from the list 
-# if there are two charachters in the list of the same type
-def remove_more_than_two(list_charachters):
+#take in a sentence
+# use a list comprehension to eliminate the word "the"
+# return the rest of the sentence as an array of words
+def remove_the(sentence):
 
 
 # return True if the list is a palindrome ex. ["x", "a", "m", "a", "x"]
