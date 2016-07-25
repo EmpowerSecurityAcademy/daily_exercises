@@ -26,17 +26,20 @@ class CustomerRefactored(object):
 		# and then returns that amount
 		bill_amount = 0 
 
-		for food_type, amount in order:
-			bill_amount += self.prices["food_type"] * amount
+		for food_type, amount in order.iteritems():
+			bill_amount += self.prices[food_type] * amount
 
 		return bill_amount
 
 	def purchase_food(self, order):
 		self.cash_available -= self.calculate_purchase_amount(order)
-		for food_type, amount in order:
-			self.food["food_type"] += amount
+		for food_type, amount in order.iteritems():
+			if food_type in self.food:
+				self.food[food_type] += amount
+			else:
+				self.food[food_type] = amount
 
 
 	def eat_food(self, food_eaten):
-		for food_type, amount in food_eaten:
-			self.food["food_type"] -= amount
+		for food_type, amount in food_eaten.iteritems():
+			self.food[food_type] -= amount

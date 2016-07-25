@@ -9,17 +9,11 @@ from customer_refactored import CustomerRefactored
 
 class TestCustomerRefactored(unittest.TestCase):
 
-	prices = {
-		"taco": 2,
-		"burrito": 8,
-		"enchilladas": 6
-	}
-
 	def test_init(self):
-		test_customer = CustomerRefactored("bill shelton", 15, prices)
+		test_customer = CustomerRefactored("bill shelton", 15, {"taco": 2,"burrito": 8, "enchilladas": 6})
 
 		self.assertEqual(test_customer.cash_available, 15)
-		self.assertEqual(test_customer.prices, prices)
+		self.assertEqual(test_customer.prices, {"taco": 2,"burrito": 8, "enchilladas": 6})
 		self.assertEqual(test_customer.food, {})
 
 	def test_calculate_purchase_amount(self):
@@ -28,8 +22,8 @@ class TestCustomerRefactored(unittest.TestCase):
 			"burrito": 3,
 			"enchilladas": 2
 		}
-		test_customer = CustomerRefactored("bill shelton", 150, prices)
-		cost = test_customer(order)
+		test_customer = CustomerRefactored("bill shelton", 150, {"taco": 2,"burrito": 8, "enchilladas": 6})
+		cost = test_customer.calculate_purchase_amount(order)
 		self.assertEqual(cost, 46)
 
 	def test_purchase_food(self):
@@ -38,7 +32,8 @@ class TestCustomerRefactored(unittest.TestCase):
 			"burrito": 3,
 			"enchilladas": 2
 		}
-		test_customer = CustomerRefactored("bill shelton", 150, prices)
+		test_customer = CustomerRefactored("bill shelton", 150, {"taco": 2,"burrito": 8, "enchilladas": 6})
+		test_customer.purchase_food(order)
 		self.assertEqual(test_customer.cash_available, 104)
 		self.assertEqual(test_customer.food, order)
 
@@ -48,8 +43,20 @@ class TestCustomerRefactored(unittest.TestCase):
 			"burrito": 4,
 			"enchilladas": 2
 		}
-		test_customer = CustomerRefactored("bill shelton", 150, prices)
-		
-		
+		test_customer = CustomerRefactored("bill shelton", 150, {"taco": 2,"burrito": 8, "enchilladas": 6})
+		test_customer.purchase_food(order)
+		food_eaten = {
+			"taco": 2,
+			"burrito": 1,
+			"enchilladas": 1
+		}
+		test_customer.eat_food(food_eaten)
+		self.assertEqual(test_customer.food, {
+				"taco": 5,
+				"burrito": 3,
+				"enchilladas": 1
+			})		
+
+
 if __name__ == '__main__':
 	unittest.main()
