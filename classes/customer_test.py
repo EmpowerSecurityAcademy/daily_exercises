@@ -16,6 +16,12 @@ class TestCustomer(unittest.TestCase):
 		self.assertEqual(test_customer.cash_available, 2)
 		self.assertEqual(test_customer.number_of_tacos, 2)
 
+	def test_eat_tacos(self):
+
+	def test_purchase_burritos(self):
+
+	def eat_burrito(self):
+
 
 if __name__ == '__main__':
 	unittest.main()
