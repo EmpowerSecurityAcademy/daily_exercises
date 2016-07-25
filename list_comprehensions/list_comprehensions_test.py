@@ -1,5 +1,5 @@
 import unittest
-from list_comprehensions import even_numbers, start_with_a
+from list_comprehensions import even_numbers, start_with_a, multiply_by_11_numbers_divisable_by_three
 
 class TestNumbers(unittest.TestCase):
 
@@ -10,6 +10,10 @@ class TestNumbers(unittest.TestCase):
 	def test_start_with_a(self):
 		result = start_with_a(["apple", "orange", "carrot"])
 		self.assertEqual(result, ["apple"])
+
+	def test_multiply_by_11_numbers_divisable_by_three(self):
+		result = multiply_by_11_numbers_divisable_by_three([1, 2, 4, 9, 7, 12])
+		self.assertEqual(result, [99, 132])
 
 if __name__ == '__main__':
 	unittest.main()

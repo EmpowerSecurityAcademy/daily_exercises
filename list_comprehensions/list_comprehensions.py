@@ -10,3 +10,6 @@ def even_numbers(array_numbers):
 def start_with_a(array_strings):
 	return [s_str for s_str in array_strings if s_str[0] == 'a']
 
+def multiply_by_11_numbers_divisable_by_three(array_numbers):
+	return [num*11 for num in array_numbers if num % 3 == 0]
+
