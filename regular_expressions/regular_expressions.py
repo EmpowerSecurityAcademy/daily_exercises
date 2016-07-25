@@ -16,3 +16,9 @@ def identify_dates(input_str):
 	date_regex = r"[a-zA-Z]+ \d+"
 	matches = re.findall(date_regex, input_str)
 	return matches
+
+# this function looks for the pattern of a social security number
+# 345-54-3455
+# if it finds it, it swaps it with XXX-XX-XXXX
+def swap_social(input_str):
+	

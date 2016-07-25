@@ -1,6 +1,6 @@
 import unittest
 import re
-from regular_expressions import identify_match, identify_dates
+from regular_expressions import identify_match, identify_dates, swap_social
 
 class TestRegularExpressions(unittest.TestCase):
 
@@ -15,7 +15,9 @@ class TestRegularExpressions(unittest.TestCase):
 		result = identify_dates("On August 11 I will ride to Arlington, on November 15 I will write a poem")
 		self.assertEqual(result, ['August 11', 'November 15'])
 
-	
+	def test_swap_social(self):
+		result = swap_social("bill shelton registered with SSN 546-87-1234")
+		self.assertEqual(result, "bill shelton registered with SSN XXX-XX-XXXX")
 
 if __name__ == '__main__':
 	unittest.main()
