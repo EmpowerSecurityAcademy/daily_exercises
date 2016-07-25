@@ -12,6 +12,7 @@ class CustomerRefactored(object):
 		# assign number_of_tacos to a variable of customer called number_of_tacos
 		# assign number_of_burritos to a variable of custmer called number_of_burritos
 		self.cash_available = cash_available
+		self.prices = prices
 		self.food = {}
 
 	def calculate_purchase_amount(self, order):
