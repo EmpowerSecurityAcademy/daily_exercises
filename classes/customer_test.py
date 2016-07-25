@@ -32,8 +32,11 @@ class TestCustomer(unittest.TestCase):
 	def eat_burrito(self):
 		test_customer = Customer("bill shelton", 15)
 		test_customer.purchase_burritos(1)
-		test_customer.eat_burritos(1)
+
 		self.assertEqual(test_customer.number_of_burritos, 1)
+
+		test_customer.eat_burritos(1)
+		self.assertEqual(test_customer.number_of_burritos, 0)
 
 
 if __name__ == '__main__':
