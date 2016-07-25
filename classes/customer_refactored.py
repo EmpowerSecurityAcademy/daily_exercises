@@ -23,8 +23,3 @@ class Customer(object):
 		self.number_of_tacos -= number_tacos_eaten
 
 	def purchase_burritos(self, )
-
-
-
-
-
