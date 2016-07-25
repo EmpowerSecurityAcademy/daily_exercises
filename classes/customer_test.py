@@ -17,6 +17,10 @@ class TestCustomer(unittest.TestCase):
 		self.assertEqual(test_customer.number_of_tacos, 2)
 
 	def test_eat_tacos(self):
+		test_customer = Customer("bill shelton", 5)
+		test_customer.purchase_tacos(2)
+		test_customer.eat_tacos(1)
+		self.assertEqual(test_customer.number_of_tacos, 1)
 
 	def test_purchase_burritos(self):
 
