@@ -23,8 +23,17 @@ class TestCustomer(unittest.TestCase):
 		self.assertEqual(test_customer.number_of_tacos, 1)
 
 	def test_purchase_burritos(self):
+		test_customer = Customer("bill shelton", 15)
+		test_customer.purchase_burritos(1)
+
+		self.assertEqual(test_customer.cash_available, 8)
+		self.assertEqual(test_customer.number_of_burritos, 1)
 
 	def eat_burrito(self):
+		test_customer = Customer("bill shelton", 15)
+		test_customer.purchase_burritos(1)
+		test_customer.eat_burritos(1)
+		self.assertEqual(test_customer.number_of_burritos, 1)
 
 
 if __name__ == '__main__':
