@@ -1,9 +1,12 @@
-# the menu of bill's taco shack is 
+# the menu of bill's taco shack is going to start changing rapidly
+# therefore the code associated with it needs to be refactored to accomodate a rapidly changing menu
+# also prices are going to start being changed on a daily basis, and because of that, we want to pass
+#prices when we initialize the customer object
 
 
-class Customer(object):
+class CustomerRefactored(object):
 
-	def __init__(self, name, cash_available, food={}):
+	def __init__(self, name, cash_available, prices, food={}):
 		self.name = name
 		# assign cash_available to a variable of customer called cash_available
 		# assign number_of_tacos to a variable of customer called number_of_tacos
