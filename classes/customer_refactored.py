@@ -14,5 +14,10 @@ class CustomerRefactored(object):
 		self.cash_available = cash_available
 		self.food = {}
 
+	def calculate_purchase_amount(self, order):
+		#the order object 
 
-	def purchase_food
+
+	def purchase_food(self, order):
+
+	def eat_food(self, food_eaten):

@@ -5,7 +5,7 @@
 
 
 import unittest
-from customer import Customer
+from customer_refactored import CustomerRefactored
 
 class TestCustomerRefactored(unittest.TestCase):
 
