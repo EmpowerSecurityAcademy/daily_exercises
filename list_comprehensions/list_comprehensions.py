@@ -1,15 +1,12 @@
-
-#take in a sentence
-# use a list comprehension to eliminate the word "the"
-# return the rest of the sentence as an array of words
-def remove_the(sentence):
+# list comprehensions follow the format
+# [dosomething(num) for num in array if some_condition_is_true]
 
 
-# return True if the list is a palindrome ex. ["x", "a", "m", "a", "x"]
-# return False if the list is not a palindrome ex. ["x", "a", "m", "a", "x", "b"]
-def palindrome_checker(possible_palindrome):
+# use a list comprehension to return only even numbers
+def even_numbers(array_numbers):
+	return [num for num in array_numbers if num % 2 == 0]
 
-# take a nested array, and flatten into one array
-# [a, [b, [c, d], e]]
-# [a, b, c, d, e]
-def flatten_list(nested_array):
+# use list comprehension to return words starting with the letter "a"
+def start_with_a(array_strings):
+	return [s_str for s_str in array_strings if s_str[0] == 'a']
+
