@@ -1,6 +1,6 @@
 import unittest
 import re
-from regular_expressions import identify_match, identify_dates, swap_social
+from regular_expressions import identify_match, identify_dates, swap_social, swap_credit_card
 
 class TestRegularExpressions(unittest.TestCase):
 
@@ -18,6 +18,11 @@ class TestRegularExpressions(unittest.TestCase):
 	def test_swap_social(self):
 		result = swap_social("bill shelton registered with SSN 546-87-1234")
 		self.assertEqual(result, "bill shelton registered with SSN XXX-XX-XXXX")
+
+	def test_swap_credit_card(self):
+		result = swap_credit_card("the customer purchased a sweater with 5500 0000 0000 0004")
+		self.assertEqual(result, "the customer purchased a sweater with XXXX XXXX XXXX XXXX")
+
 
 if __name__ == '__main__':
 	unittest.main()
