@@ -21,4 +21,6 @@ def identify_dates(input_str):
 # 345-54-3455
 # if it finds it, it swaps it with XXX-XX-XXXX
 def swap_social(input_str):
-	
+	ssn_regex = r"\d{3}-?\d{2}-?\d{4}"
+	result = re.sub(ssn_regex, "XXX-XX-XXXX", input_str)
+	return result
