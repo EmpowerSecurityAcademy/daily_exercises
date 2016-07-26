@@ -18,12 +18,12 @@ class TestNumbers(unittest.TestCase):
 		result = strip_a_from_word("apple")
 		self.assertEqual(result, "pple")
 
-	# 	result = strip_a_from_word("lemon")
-	# 	self.assertEqual(result, "lemon")
+		# result = strip_a_from_word("lemon")
+		# self.assertEqual(result, "lemon")
 
-	# def test_split_sentence_remove_a(self):
-	# 	result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
-	# 	self.assertEqual(result, ['I', 'relly', 'like', 'to', 'et', 'pples', 'while', 'jumping', 'on', 'rtichokes.'])
+	def test_split_sentence_remove_a(self):
+		result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
+		self.assertEqual(result, ['I', 'relly', 'like', 'to', 'et', 'pples', 'while', 'jumping', 'on', 'rtichokes.'])
 
 	# def test_filter_divisable_by_five(self):
 	# 	result = filter_divisable_by_five([1, 5, 10, 11, 15, 42])
