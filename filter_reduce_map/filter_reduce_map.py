@@ -19,4 +19,12 @@ def strip_a_from_word(word):
 # do this using map and strip_a_from_word
 def split_sentence_remove_a(sentence):
 	split_sentence = sentence.split(" ")
-	return map(split_sentence, strip_a_from_word)
+	return map(strip_a_from_word, split_sentence)
+
+def divisable_by_5(number):
+	if number % 5 == 0:
+		return True
+	else:
+		return False
+
+

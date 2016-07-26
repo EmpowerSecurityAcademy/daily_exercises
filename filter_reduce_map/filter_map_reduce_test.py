@@ -5,7 +5,7 @@
 
 
 import unittest
-from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a
+from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a, 
 
 class TestNumbers(unittest.TestCase):
 
@@ -13,7 +13,13 @@ class TestNumbers(unittest.TestCase):
 		result = doubled_list([1, 2, 4, 5, 7, 8])
 		self.assertEqual(result, [2, 4, 8, 10, 14, 16])
 
-	def test_strip_a_from_word
+	def test_strip_a_from_word(self):
+		result = strip_a_from_word("apple")
+		self.assertEqual(result, "pple")
+
+	def test_split_sentence_remove_a(self):
+		result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
+		self.assertEqual(result, ['I', 'relly', 'like', 'to', 'et', 'pples', 'while', 'jumping', 'on', 'rtichokes.'])
 
 if __name__ == '__main__':
 	unittest.main()
