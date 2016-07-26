@@ -5,7 +5,8 @@
 
 
 import unittest
-from filter_map import doubled_list, strip_a_from_word, split_sentence_remove_a, filter_divisable_by_five, contains_ing, filter_contains_ing
+import filter_map 
+
 
 class TestNumbers(unittest.TestCase):
 
