@@ -47,5 +47,3 @@ def filter_contains_ing(sentence):
 	split_sentence = sentence.split(" ")
 	return filter(contains_ing, split_sentence)
 
-def summer
-
