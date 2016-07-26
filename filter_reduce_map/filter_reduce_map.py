@@ -42,5 +42,8 @@ def contains_ing(word):
 
 # write a function that uses filter and contains_ing
 # to return all words in a sentence that contain ing
+# they should be returned as an array of strings
 def filter_contains_ing(sentence):
+	split_sentence = sentence.split(" ")
+	return filter(contains_ing, split_sentence)
 

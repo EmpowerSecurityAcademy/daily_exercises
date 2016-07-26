@@ -5,7 +5,7 @@
 
 
 import unittest
-from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a, filter_divisable_by_five, contains_ing, filter_ing_words
+from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a, filter_divisable_by_five, contains_ing, filter_contains_ing
 
 class TestNumbers(unittest.TestCase):
 
@@ -36,7 +36,9 @@ class TestNumbers(unittest.TestCase):
 		self.assertEqual(result, False)
 
 	def test_filter_contains_ing(self):
-		
+		result = filter_contains_ing("Bling bling makes we want to sing")
+		print(result)
+		self.assertEqual(result, ['Bling', 'bling', 'sing'])
 
 
 if __name__ == '__main__':
