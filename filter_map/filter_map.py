@@ -22,10 +22,10 @@ def strip_a_from_word(word):
 #remove all letter "a" from word
 # do this using map and strip_a_from_word
 def split_sentence_remove_a(sentence):
-	for words in sentence.split():
-		print(words)
-	print map(words, strip_a_from_word)
-
+	split_words = sentence.split(" ")
+	sample = map(strip_a_from_word, split_words)
+	print sample
+	return sample
 
 
 

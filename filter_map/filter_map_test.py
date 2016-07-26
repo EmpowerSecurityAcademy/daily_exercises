@@ -18,8 +18,11 @@ class TestNumbers(unittest.TestCase):
 		result = strip_a_from_word("apple")
 		self.assertEqual(result, "pple")
 
-		# result = strip_a_from_word("lemon")
-		# self.assertEqual(result, "lemon")
+		result = strip_a_from_word("really")
+		self.assertEqual(result, "relly")
+
+		result = strip_a_from_word("lemon")
+		self.assertEqual(result, "lemon")
 
 	def test_split_sentence_remove_a(self):
 		result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
