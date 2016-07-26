@@ -28,20 +28,20 @@ class TestNumbers(unittest.TestCase):
 		result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
 		self.assertEqual(result, ['I', 'relly', 'like', 'to', 'et', 'pples', 'while', 'jumping', 'on', 'rtichokes.'])
 
-	# def test_filter_divisable_by_five(self):
-	# 	result = filter_divisable_by_five([1, 5, 10, 11, 15, 42])
-	# 	self.assertEqual(result, [5, 10, 15])
+	def test_filter_divisable_by_five(self):
+		result = filter_divisable_by_five([1, 5, 10, 11, 15, 42])
+		self.assertEqual(result, [5, 10, 15])
 
-	# def test_contains_ing(self):
-	# 	result = contains_ing("beginning")
-	# 	self.assertEqual(result, True)
+	def test_contains_ing(self):
+		result = contains_ing("beginning")
+		self.assertEqual(result, True)
 
-	# 	result = contains_ing("end")
-	# 	self.assertEqual(result, False)
+		result = contains_ing("end")
+		self.assertEqual(result, False)
 
-	# def test_filter_contains_ing(self):
-	# 	result = filter_contains_ing("Bling bling makes we want to sing")
-	# 	self.assertEqual(result, ['Bling', 'bling', 'sing'])
+	def test_filter_contains_ing(self):
+		result = filter_contains_ing("Bling bling makes we want to sing")
+		self.assertEqual(result, ['Bling', 'bling', 'sing'])
 
 
 if __name__ == '__main__':
