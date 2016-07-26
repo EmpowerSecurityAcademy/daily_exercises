@@ -31,3 +31,16 @@ def divisable_by_5(number):
 # to return numbers in the list that are divisable by 5
 def filter_divisable_by_five(numbers):
 	return filter(divisable_by_5, numbers)
+
+# write a function that returns True if a word contains "ing"
+# the function should return False if it does not
+def contains_ing(word):
+	if "ing" in word:
+		return True
+	else:
+		return False
+
+# write a function that uses filter and contains_ing
+# to return all words in a sentence that contain ing
+def filter_contains_ing(sentence):
+

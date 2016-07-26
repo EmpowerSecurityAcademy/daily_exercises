@@ -5,7 +5,7 @@
 
 
 import unittest
-from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a, filter_divisable_by_five
+from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a, filter_divisable_by_five, contains_ing, filter_ing_words
 
 class TestNumbers(unittest.TestCase):
 
@@ -17,6 +17,9 @@ class TestNumbers(unittest.TestCase):
 		result = strip_a_from_word("apple")
 		self.assertEqual(result, "pple")
 
+		result = strip_a_from_word("lemon")
+		self.assertEqual(result, "lemon")
+
 	def test_split_sentence_remove_a(self):
 		result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
 		self.assertEqual(result, ['I', 'relly', 'like', 'to', 'et', 'pples', 'while', 'jumping', 'on', 'rtichokes.'])
@@ -24,6 +27,17 @@ class TestNumbers(unittest.TestCase):
 	def test_filter_divisable_by_five(self):
 		result = filter_divisable_by_five([1, 5, 10, 11, 15, 42])
 		self.assertEqual(result, [5, 10, 15])
+
+	def test_contains_ing(self):
+		result = contains_ing("beginning")
+		self.assertEqual(result, True)
+
+		result = contains_ing("end")
+		self.assertEqual(result, False)
+
+	def test_filter_contains_ing(self):
+		
+
 
 if __name__ == '__main__':
 	unittest.main()
