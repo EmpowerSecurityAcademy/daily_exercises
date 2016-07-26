@@ -29,3 +29,5 @@ def divisable_by_5(number):
 
 # use the filter function and divisable_by_5
 # to return numbers in the list that are divisable by 5
+def filter_divisable_by_five(numbers):
+	return filter(divisable_by_5, numbers)
