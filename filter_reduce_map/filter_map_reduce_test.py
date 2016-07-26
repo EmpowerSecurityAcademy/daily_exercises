@@ -5,13 +5,15 @@
 
 
 import unittest
-from filter_reduce_map import doubled_list
+from filter_reduce_map import doubled_list, strip_a_from_word, split_sentence_remove_a
 
 class TestNumbers(unittest.TestCase):
 
 	def test_doubled_list(self):
 		result = doubled_list([1, 2, 4, 5, 7, 8])
 		self.assertEqual(result, [2, 4, 8, 10, 14, 16])
+
+	def test_strip_a_from_word
 
 if __name__ == '__main__':
 	unittest.main()
