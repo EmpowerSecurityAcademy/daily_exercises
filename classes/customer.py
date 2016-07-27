@@ -8,7 +8,6 @@ class Customer(object):
 		self.name = name
 		# assign cash_available to a variable of customer called cash_available
 		# assign number_of_tacos to a variable of customer called number_of_tacos
-		# assign number_of_burritos to a variable of custmer called number_of_burritos
 		self.cash_available = cash_available
 		self.number_of_tacos = number_of_tacos
 		self.number_of_burritos = number_of_burritos
@@ -30,10 +29,10 @@ class Customer(object):
 		self.number_of_burritos += number_burritos_purchased
 		self.cash_available -= number_burritos_purchased * 7	
 
+	
 	def eat_burritos(self, number_burritos_eaten):
-		#subtract the number of burritos eaten from self.number_of_burritos
-		self.number_of_burritos -= number_burritos_eaten
-
+		#subtract the number of burritos eaten from self.number_of_tacos
+		self.number_of_burritos += number_burritos_eaten
 
 
 
