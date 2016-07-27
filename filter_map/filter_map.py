@@ -18,8 +18,6 @@ def doubled_list(numbers):
 
 
 
-
-
 #write a function that splits a sentence into words
 #remove all letter "a" from word
 # do this using map and strip_a_from_word

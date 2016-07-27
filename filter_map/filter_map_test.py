@@ -15,11 +15,14 @@ class TestNumbers(unittest.TestCase):
 		self.assertEqual(result, [2, 4, 8, 10, 14, 16])
 
 	def test_strip_a_from_word(self):
-		result = strip_a_from_word("apple")
-		self.assertEqual(result, "pple")
+		# result = strip_a_from_word("apple")
+		# self.assertEqual(result, "pple")
 
-	# 	result = strip_a_from_word("lemon")
-	# 	self.assertEqual(result, "lemon")
+		# result = strip_a_from_word("pineapple")
+		# self.assertEqual(result, "pinepple")
+
+		# result = strip_a_from_word("lemon")
+		# self.assertEqual(result, "lemon")
 
 	# def test_split_sentence_remove_a(self):
 	# 	result = split_sentence_remove_a("I really like to eat apples while jumping on artichokes.")
