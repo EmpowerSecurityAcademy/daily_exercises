@@ -9,11 +9,9 @@ class CustomerRefactored(object):
 	def __init__(self, name, cash_available, prices, food={}):
 		self.name = name
 		# assign cash_available to a variable of customer called cash_available
-		# assign number_of_tacos to a variable of customer called number_of_tacos
-		# assign number_of_burritos to a variable of custmer called number_of_burritos
-		self.cash_available = cash_available
-		self.prices = prices
-		self.food = {}
+		# assign prices to a variable of customer named prices
+		# assign food to a variable of custmer named food
+
 
 	def calculate_purchase_amount(self, order):
 		#the order object is a dictionary, with food types and amounts
@@ -24,22 +22,13 @@ class CustomerRefactored(object):
 		# }
 		# this function uses self.prices to calculate the cost of all the food in an order
 		# and then returns that amount
-		bill_amount = 0 
 
-		for food_type, amount in order.iteritems():
-			bill_amount += self.prices[food_type] * amount
-
-		return bill_amount
 
 	def purchase_food(self, order):
-		self.cash_available -= self.calculate_purchase_amount(order)
-		for food_type, amount in order.iteritems():
-			if food_type in self.food:
-				self.food[food_type] += amount
-			else:
-				self.food[food_type] = amount
+		# use calculate_purchase_amount to calculate the cost of food
+		# remove the purchase price of food from self.cash_available
+		# add food ordered to the self.food variable
 
 
 	def eat_food(self, food_eaten):
-		for food_type, amount in food_eaten.iteritems():
-			self.food[food_type] -= amount
+		#remove from self.food the food in the food_eaten object 
