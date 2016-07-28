@@ -1,3 +1,5 @@
+#don't worry to much about edge cases, worry about passing the tests
+
 import re
 
 # write a function that returns True or False
