@@ -12,9 +12,9 @@ class TestRegularExpressions(unittest.TestCase):
 		result = identify_match("cats like to wear hats", "fish")
 		self.assertEqual(result, False)
 
-	# def test_identify_dates(self):
-	# 	result = identify_dates("On August 11 I will ride to Arlington, on November 15 I will write a poem")
-	# 	self.assertEqual(result, ['August 11', 'November 15'])
+	def test_identify_dates(self):
+		result = identify_dates("On August 11 I will ride to Arlington, on November 15 I will write a poem")
+		self.assertEqual(result, ['August 11', 'November 15'])
 
 	# def test_swap_social(self):
 	# 	result = swap_social("bill shelton registered with SSN 546-87-1234")

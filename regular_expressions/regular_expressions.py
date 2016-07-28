@@ -9,6 +9,7 @@ def identify_match(input_str, pattern):
 # write an array that scans a text string
 # and returns an array of all dates that follow the following format;
 # month day, example June 4 or November 11
+#don't worry about potential false positives like Hamburger 7, or Artichoke 45
 #def identify_dates(input_str):
 
 
