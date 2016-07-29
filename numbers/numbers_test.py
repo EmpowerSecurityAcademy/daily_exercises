@@ -1,16 +1,24 @@
 import unittest
-from numbers import 
+from numbers import *
 
 class TestNumbers(unittest.TestCase):
 
-	def test_map(self):
-		def multiply_2(num):
-			return num * 2
+	def test_sum_3_5_multiples(self):
+		result = sum_3_5_multiples(155)
+		self.assertEqual(result, 11110)
 
-		input_array = [3, 4, 5, 6, 7]
-		res = _map(input_array, multiply_2)
 
-		self.assertEqual(res, [6, 8, 10, 12, 14])
+	def test_sum_fibonacci_numbers_below_1000000(self):
+		result = sum_fibonacci_numbers_below_1000000()
+		self.assertEqual(result, 2178308)
+
+
+
+	def test_largest_palindrome_of_thee_digit_numbers(self):
+		result = largest_palindrome_of_thee_digit_numbers()
+		self.assertEqual(result, 906609)
+
+
 
 if __name__ == '__main__':
 	unittest.main()
