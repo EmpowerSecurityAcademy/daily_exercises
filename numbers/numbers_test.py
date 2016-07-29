@@ -3,14 +3,12 @@ from numbers import
 
 class TestNumbers(unittest.TestCase):
 
-	def test_map(self):
-		def multiply_2(num):
-			return num * 2
+	def test_sum_3_5_multiples(self):
 
-		input_array = [3, 4, 5, 6, 7]
-		res = _map(input_array, multiply_2)
+	def test_sum_fibonacci_numbers_below_1000000(self):
 
-		self.assertEqual(res, [6, 8, 10, 12, 14])
+	def test_largest_palindrome_of_thee_digit_numbers():
+		
 
 if __name__ == '__main__':
 	unittest.main()
