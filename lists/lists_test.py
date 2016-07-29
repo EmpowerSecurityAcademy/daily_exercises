@@ -15,8 +15,8 @@ class TestLists(unittest.TestCase):
 		self.assertEqual(result, False)
 
 	def test_flatten_list(self):
-		result = multiply_by_11_numbers_divisable_by_three([1, 2, 4, 9, 7, 12])
-		self.assertEqual(result, [99, 132])
+		result = flatten_list(["a", ["b", "e"], "f"])
+		self.assertEqual(result, ["a", "b", "e", "f"])
 
 if __name__ == '__main__':
 	unittest.main()

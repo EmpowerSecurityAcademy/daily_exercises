@@ -1,4 +1,4 @@
-
+import types
 
 
 # return elements of a list
@@ -32,5 +32,11 @@ def palindrome_checker(possible_palindrome):
 # take a nested array, and flatten into one array
 # [a, [b, [c, d], e]]
 # [a, b, c, d, e]
+# use recursion
 def flatten_list(nested_array):
-	
+	value = [val for sublist in nested_array for val in sublist]
+	return value
+
+
+
+
