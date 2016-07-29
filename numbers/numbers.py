@@ -26,10 +26,28 @@ def sum_fibonacci_numbers_below_1000000():
 	return total
 
 
+def palindrome_checker(possible_palindrome):
+	string_length = len(possible_palindrome)
+	for i, charachter in enumerate(possible_palindrome):
+		if possible_palindrome[(string_length - i - 1)] != charachter:
+			return False
 
+	return True
 
 #largest palindrome product
 #palindrome number is the same forward and backwards
-#find the largest palindrome number that is the product of two two digit numbers
-#example 9009 = 91 * 99
-#def largest_palindrome_of_thee_digit_numbers():
+#find the largest palindrome number that is the product of two three digit numbers
+#example for two digit 9009 = 91 * 99
+def largest_palindrome_of_thee_digit_numbers():
+	highest_sum = 0
+	for  x in range(100, 999):
+		for y in range(100, 999):
+			multiple = x * y
+			if palindrome_checker(str(multiple)):
+				if multiple > highest_sum:
+					highest_sum = multiple
+	return highest_sum
+
+
+
+

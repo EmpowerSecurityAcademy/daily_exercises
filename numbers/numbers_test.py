@@ -10,12 +10,13 @@ class TestNumbers(unittest.TestCase):
 
 	def test_sum_fibonacci_numbers_below_1000000(self):
 		result = sum_fibonacci_numbers_below_1000000()
-		self.assertEqual(result, 2692537)
+		self.assertEqual(result, 2178308)
 
 
 
-	# def test_largest_palindrome_of_thee_digit_numbers(self):
-		
+	def test_largest_palindrome_of_thee_digit_numbers(self):
+		result = largest_palindrome_of_thee_digit_numbers()
+		self.assertEqual(result, 906609)
 
 
 
