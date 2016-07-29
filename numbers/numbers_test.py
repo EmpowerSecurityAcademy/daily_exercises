@@ -9,7 +9,8 @@ class TestNumbers(unittest.TestCase):
 
 
 	def test_sum_fibonacci_numbers_below_1000000(self):
-
+		result = sum_fibonacci_numbers_below_1000000()
+		self.assertEqual(result, 2692537)
 
 
 

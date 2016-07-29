@@ -11,7 +11,20 @@ def sum_3_5_multiples(ceiling_number):
 
 #find the sum of all fibonacci numbers below 1,000,000
 def sum_fibonacci_numbers_below_1000000():
-	
+	fibonaccis = []
+	current = 1
+	previous = 1
+	while current < 1000000:
+		holder = current
+		current += previous
+		fibonaccis.append(previous)
+		previous = holder
+	fibonaccis.append(previous)
+	total = 0
+	for num in fibonaccis:
+		total += num
+	return total
+
 
 
 
