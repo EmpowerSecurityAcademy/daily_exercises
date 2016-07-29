@@ -14,7 +14,7 @@ class TestNumbers(unittest.TestCase):
 		result = doubled_list([1, 2, 4, 5, 7, 8])
 		self.assertEqual(result, [2, 4, 8, 10, 14, 16])
 
-	def test_strip_a_from_word(self):
+	#def test_strip_a_from_word(self):
 		# result = strip_a_from_word("apple")
 		# self.assertEqual(result, "pple")
 

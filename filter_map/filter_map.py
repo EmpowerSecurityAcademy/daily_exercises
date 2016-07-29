@@ -7,8 +7,7 @@ def multiply_by_two(value):
 	return value * 2
 
 #write a function that uses map, and multiply_by_two to double all numbers in a list
-def doubled_list(numbers):
-	return map(multiply_by_two, numbers)
+#def doubled_list(numbers):
 
 
 
