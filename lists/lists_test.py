@@ -3,13 +3,16 @@ from lists import *
 
 class TestLists(unittest.TestCase):
 
-	def test_remove_more_than_two(self):
-		result = even_numbers([1, 2, 4, 5, 7, 8])
-		self.assertEqual(result, [2, 4, 8])
+	def test_return_non_unique(self):
+		result = return_non_unique(["a", "b", "c", "d", "a", "b", "e"])
+		self.assertEqual(result, ["a", "b"])
 
 	def test_palindrome_checker(self):
-		result = start_with_a(["apple", "orange", "carrot"])
-		self.assertEqual(result, ["apple"])
+		result = palindrome_checker(["z", "a", "w", "a", "z"])
+		self.assertEqual(result, True)
+
+		result = palindrome_checker(["z", "g", "w", "a", "z"])
+		self.assertEqual(result, False)
 
 	def test_flatten_list(self):
 		result = multiply_by_11_numbers_divisable_by_three([1, 2, 4, 9, 7, 12])
