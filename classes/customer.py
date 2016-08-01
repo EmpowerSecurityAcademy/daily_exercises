@@ -24,7 +24,7 @@ class Customer(object):
 	# 	#decrease available cash by 7 * amount		
 
 	# def eat_burritos(self, number_burritos_eaten):
-	# 	#subtract the number of tacos eaten from self.number_of_tacos
+	# 	#subtract the number of burritos eaten from self.number_of_tacos
 
 
 
