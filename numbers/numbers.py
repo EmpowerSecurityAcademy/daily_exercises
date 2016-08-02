@@ -4,7 +4,7 @@
 def sum_3_5_multiples(ceiling_number):
 	total = 0
 	for num in range(ceiling_number):
-		if num % 3 or num % 5:
+		if num % 3 == 0 or num % 5 == 0:
 			total += num
 	return total
 
