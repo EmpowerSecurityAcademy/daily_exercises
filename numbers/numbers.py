@@ -28,8 +28,8 @@ def sum_fibonacci_numbers_below_1000000():
 
 def palindrome_checker(possible_palindrome):
 	string_length = len(possible_palindrome)
-	for i, charachter in enumerate(possible_palindrome):
-		if possible_palindrome[(string_length - i - 1)] != charachter:
+	for i, character in enumerate(possible_palindrome):
+		if possible_palindrome[(string_length - i - 1)] != character:
 			return False
 
 	return True
