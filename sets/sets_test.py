@@ -17,6 +17,10 @@ class TestSets(unittest.TestCase):
 
 		self.assertEqual(result, ["a", "j"])
 
+	def test_exist_only_in_first_set(self):
+
+		
+
 
 if __name__ == '__main__':
 	unittest.main()
