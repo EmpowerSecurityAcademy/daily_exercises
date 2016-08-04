@@ -29,6 +29,6 @@ def unique_elements_list_a(list_a, list_b):
 	return list(set_a.difference(set_b))
 
 # # return all elements in either set
-def combine_sets():
+def combine_sets(set1, set2):
 
- return "bla"
+	return set1.union(set2)
