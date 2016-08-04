@@ -1,5 +1,5 @@
 import unittest
-from list_comprehensions import even_numbers, start_with_a, multiply_by_11_numbers_divisable_by_three
+from list_comprehensions import *
 
 class TestNumbers(unittest.TestCase):
 
