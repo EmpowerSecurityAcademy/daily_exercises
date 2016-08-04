@@ -46,3 +46,8 @@ http://www.python-course.eu/re.php
 
 
 http://www.learnpython.org/en/Sets
+
+
+# Tuples 
+
+http://www.thomas-cokelaer.info/tutorials/python/tuples.html
