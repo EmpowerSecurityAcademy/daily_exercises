@@ -15,8 +15,8 @@ def intersection_two_sets(list_a, list_b):
 	set_b = set(list_b)
 	return list(set_a.intersection(set_b))
 
-# find elements that are unique to the first set
-def exist_only_in_first_set(set_a, set_b):
+# find elements that are unique to one of the sets
+def exist_only_in_one_set(set_a, set_b):
 
 	return set_a.symmetric_difference(set_b)
 
@@ -24,5 +24,10 @@ def exist_only_in_first_set(set_a, set_b):
 def unique_elements(set_a, set_b):
 
 
-# return all elements in either set
+
+
+
+# # return all elements in either set
 def combine_sets()
+
+

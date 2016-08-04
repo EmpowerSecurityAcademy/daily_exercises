@@ -19,7 +19,20 @@ class TestSets(unittest.TestCase):
 
 	def test_exist_only_in_first_set(self):
 
-		
+		set_a = set(["a", "b", "a", "c", "d", "j", "k", "m", "a", "b", "c"])
+		set_b = set(["a", "f", "l", "z", "j", "w", "w", "y"])
+
+		result = exist_only_in_one_set(set_a, set_b)
+		self.assertEqual(result, set(['c', 'b', 'd', 'f', 'k', 'm', 'l', 'w', 'y', 'z']))
+
+
+	def test_unique_elements(self):
+
+		['c', 'b', 'd', 'f', 'k', 'm', 'l', 'w', 'y', 'z']
+
+
+
+	# def test_combine_sets(self):
 
 
 if __name__ == '__main__':
