@@ -28,8 +28,11 @@ class TestSets(unittest.TestCase):
 
 	def test_unique_elements(self):
 
-		['c', 'b', 'd', 'f', 'k', 'm', 'l', 'w', 'y', 'z']
+		list_a = ["green", "yellow", "blue", "orange", "purple", "grey", "black"]
+		list_b = ["pink", "blue", "black", "yellow", "tangerine"]
 
+		result = unique_elements_list_a(list_a, list_b)
+		self.assertEqual(result, ['purple', 'orange', 'green', 'grey'])
 
 
 	# def test_combine_sets(self):
