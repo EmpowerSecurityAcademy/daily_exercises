@@ -11,18 +11,22 @@
 def construct_dictionary(dictionary_list):
 	return_value = {}
 
-	for key, value in dictionary_list.items():
-		return_value[key] = value
+	for element in dictionary_list:
+		print(element)
+		for key, value in element.items():
+			return_value[key] = value
 
 	return return_value
 
 # this function is the opposite of the above function
 # we will take in a dictionary, and unpack it into a list
 # of key value pairs
-def unpack_dictionary(dictionary_list):
-	return_value = {}
+def unpack_dictionary(packed_dictionary):
+	return_value = []
 
-	for key, value in dictionary_list.items():
-		return_value[key] = value
+	for key, value in packed_dictionary.items():
+		dict_element = {}
+		dict_element[key] = value
+		return_value.append(dict_element)
 
 	return return_value
