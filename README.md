@@ -41,3 +41,8 @@ https://github.com/mikeckennedy/write-pythonic-code-demos
 #advanced python
 
 http://www.python-course.eu/re.php
+
+# Python Tutorial
+
+
+http://www.learnpython.org/en/Sets
