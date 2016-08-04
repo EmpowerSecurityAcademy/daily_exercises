@@ -8,7 +8,14 @@ class TestSets(unittest.TestCase):
 		result = create_set_from_sentence("driving in the District can be a struggle driving in new york and driving in san francisco can be a struggle as well")
 		self.assertEqual(result, set(['a', 'be', 'and', 'francisco', 'driving', 'District', 'struggle', 'well', 'as', 'new', 'york', 'can', 'in', 'san', 'the']))
 
+	def test_intersection_two_sets(self):
 
+		list_a = ["a", "b", "a", "c", "d", "j", "k", "m", "a", "b", "c"]
+		list_b = ["a", "f", "l", "z", "j", "w", "w", "y"]
+
+		result = intersection_two_sets(list_a, list_b)
+
+		self.assertEqual(result, ["a", "j"])
 
 
 if __name__ == '__main__':
