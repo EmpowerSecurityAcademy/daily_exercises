@@ -13,7 +13,11 @@ class TestTuples(unittest.TestCase):
 		result = access_tuple_values(tup_2)
 		self.assertEqual(result, ("huaraz", "new york", "chicago"))
 
+	def test_add_value_to_tuple(self):
 
+		tup_1 = ("odeza", "kygo")
+		result = add_value_to_tuple(tup_1, "lana del rey")
+		self.assertEqual(result, ("odeza", "kygo", "lana del rey"))
 
 if __name__ == '__main__':
 	unittest.main()
