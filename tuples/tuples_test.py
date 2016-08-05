@@ -3,10 +3,17 @@ from tuples import *
 
 class TestTuples(unittest.TestCase):
 
-	def test_create_set_from_sentence(self):
+	def test_access_tuple_values(self):
 
-		result = create_set_from_sentence("driving in the District can be a struggle driving in new york and driving in san francisco can be a struggle as well")
-		self.assertEqual(result, set(['a', 'be', 'and', 'francisco', 'driving', 'District', 'struggle', 'well', 'as', 'new', 'york', 'can', 'in', 'san', 'the']))
+		tup_1 = ("spain", "germany", "argentina", "peru", "japan")
+		result = access_tuple_values(tup_1)
+		self.assertEqual(result, ("argentina", "peru", "japan"))
+
+		tup_2 = ("paris", "buenos aires", "tokyo", "frieburg", "huaraz", "new york", "chicago")
+		result = access_tuple_values(tup_2)
+		self.assertEqual(result, ("huaraz", "new york", "chicago"))
+
+
 
 if __name__ == '__main__':
 	unittest.main()

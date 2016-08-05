@@ -1,8 +1,9 @@
 # create a set
 
-# use .split(" ") to split the input, and return it as a set
-def create_set_from_sentence(sentence):
-	split_sentence = sentence.split(" ")
-	return set(split_sentence)
+# return the last three values in the tuple input
+def access_tuple_values(tup_input):
+	length = len(tup_input)
+	return tup_input[(length - 3):(length)]
+
 
 
