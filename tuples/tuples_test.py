@@ -19,5 +19,14 @@ class TestTuples(unittest.TestCase):
 		result = add_value_to_tuple(tup_1, "lana del rey")
 		self.assertEqual(result, ("odeza", "kygo", "lana del rey"))
 
+	def test_boolean_exists(self):
+
+		list_input = ["deer valley", "park city", "vail", "crested butte", "alpine"]
+		tup_input = ("vail", "crested butte")
+
+		result = boolean_exists(tup_input, list_input)
+
+		self.assertEqual(result, [False, False, True, True, False])
+
 if __name__ == '__main__':
 	unittest.main()
