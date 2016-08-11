@@ -28,6 +28,7 @@ def combine_strings(strings):
 
 # this function will take in a paragraph of text
 # the output will be a list of sentences
+# include periods, and remove leading empty strings
 def break_into_sentence(string):
 
 	return_array = []
@@ -36,8 +37,30 @@ def break_into_sentence(string):
 
 	for sentence in modified:
 		transformed = sentence + "."
+		if transformed.startswith(" "):
+			transformed = transformed[1:]
 		return_array.append(transformed)
 
+	remove_last = return_array.pop()
 	return return_array
+
+# use break_into_sentence to break the text paragraph 
+# into sentences
+# put them into a dictionary where the key is the sentence
+# and the value is the number of chrachters in the string
+def count_length(string):
+
+	return_dict = {}
+
+	sentences = break_into_sentence(string)
+
+	for element in sentences:
+
+		return_dict[element] = len(element)
+
+	return return_dict
+
+
+
 
 
