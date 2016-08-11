@@ -26,3 +26,6 @@ def combine_strings(strings):
 
 	return start
 
+def break_into_sentence(string):
+
+	
