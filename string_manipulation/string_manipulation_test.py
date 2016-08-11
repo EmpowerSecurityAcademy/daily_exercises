@@ -13,7 +13,10 @@ class TestStringManipulation(unittest.TestCase):
 
 	def test_combine_strings(self):
 
-		
+		string_list = ["I think ", "that I will have a good time ", "writing code today ", "I will learn a lot"]
+
+		result = combine_strings(string_list)
+		self.assertEqual(result, "I think that I will have a good time writing code today I will learn a lot")
 
 if __name__ == '__main__':
 	unittest.main()
