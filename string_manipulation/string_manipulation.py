@@ -26,6 +26,18 @@ def combine_strings(strings):
 
 	return start
 
+# this function will take in a paragraph of text
+# the output will be a list of sentences
 def break_into_sentence(string):
 
-	
+	return_array = []
+
+	modified = string.split(".")
+
+	for sentence in modified:
+		transformed = sentence + "."
+		return_array.append(transformed)
+
+	return return_array
+
+
