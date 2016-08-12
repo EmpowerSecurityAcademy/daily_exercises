@@ -20,8 +20,15 @@ def if_element_length_is_7_or_more(lst):
 
 	return return_array
 
-def list_of_list(lst):
+def unpack_list_of_list(lst):
 
 	return_array = []
+
+	for inner_lst in lst:
+		for element in inner_lst:
+			return_array.append(element)
+
+	return return_array
+
 
 
