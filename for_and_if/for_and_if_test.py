@@ -37,5 +37,18 @@ class TestForAndIf(unittest.TestCase):
 							 ])
 		self.assertEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
 
+	def test_if_key_in_dictionary(self):
+
+		test_dct = {
+			"blue": "ocean",
+			"green": "tree",
+			"grey": "rock",
+			"purple": "flower"
+		}
+
+		test_lst = ["blue", "purple"]
+
+		
+
 if __name__ == '__main__':
 	unittest.main()

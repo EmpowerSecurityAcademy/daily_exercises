@@ -30,5 +30,8 @@ def unpack_list_of_list(lst):
 
 	return return_array
 
+def if_key_in_dictionary(dct, lst):
+
+
 
 
