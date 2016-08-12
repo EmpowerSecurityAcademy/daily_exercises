@@ -20,6 +20,8 @@ def if_element_length_is_7_or_more(lst):
 
 	return return_array
 
+def list_of_list(lst):
 
+	return_array = []
 
 

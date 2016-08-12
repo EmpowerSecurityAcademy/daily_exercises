@@ -18,7 +18,16 @@ class TestForAndIf(unittest.TestCase):
 		result = if_element_length_is_7_or_more([[1, 2, 3, 4, 5, 6, 7, 8], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6, 7], [1, 2, 3]])
 		self.assertEqual(result, [[1, 2, 3, 4, 5, 6, 7, 8], [1, 2, 3, 4, 5, 6, 7]])
 
+	def test_list_of_list(self):
 
+		result = list_of_list([
+								["a", "b", "c", "d", "e"],
+								["f", "g", "h", "i", "j"],
+								["k", "l", "m", "n", "o"],
+								["p", "q", "r", "s", "t"],
+								["u", "v", "w", "x", "y"],
+								["z"]
+							 ])
 
 if __name__ == '__main__':
 	unittest.main()
