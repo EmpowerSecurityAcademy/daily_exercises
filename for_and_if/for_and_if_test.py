@@ -32,7 +32,7 @@ class TestForAndIf(unittest.TestCase):
 
 		result = unpack_list_of_list([
 								[1, 2, 3, 4, 5],
-								[6, 7, 8, 8, 10],
+								[6, 7, 8, 9, 10],
 								[11, 12, 13, 14, 15]
 							 ])
 		self.assertEqual(result, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
@@ -50,6 +50,18 @@ class TestForAndIf(unittest.TestCase):
 
 		result = if_key_in_dictionary(test_dct, test_lst)
 		self.assertEqual(result, ["blue", "purple"])
+
+		test_dct = {
+			"salty": "chips",
+			"sweet": "candy",
+			"bitter": "dandelion",
+			"sour": "lemon"
+		}
+
+		test_lst = ["umami", "salty"]
+
+		result = if_key_in_dictionary(test_dct, test_lst)
+		self.assertEqual(result, ["salty"])
 
 if __name__ == '__main__':
 	unittest.main()
