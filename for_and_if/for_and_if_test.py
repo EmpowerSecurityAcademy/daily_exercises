@@ -46,9 +46,10 @@ class TestForAndIf(unittest.TestCase):
 			"purple": "flower"
 		}
 
-		test_lst = ["blue", "purple"]
+		test_lst = ["blue", "yellow", "purple", "violet"]
 
-		
+		result = if_key_in_dictionary(test_dct, test_lst)
+		self.assertEqual(result, ["blue", "purple"])
 
 if __name__ == '__main__':
 	unittest.main()

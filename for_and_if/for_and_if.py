@@ -32,6 +32,17 @@ def unpack_list_of_list(lst):
 
 def if_key_in_dictionary(dct, lst):
 
+	return_array = []
+
+	for element in lst:
+		if element in dct:
+			return_array.append(element)
+
+	return return_array
+
+
+
+
 
 
 
