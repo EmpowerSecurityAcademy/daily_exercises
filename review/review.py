@@ -30,8 +30,8 @@ def is_int_or_string(mystery):
 
 
 # use a list comprehension!!!
-def even_numbers(array_numbers):
-	return [num for num in array_numbers if num % 2 == 0]
+def odd_numbers(array_numbers):
+	return [num for num in array_numbers if num % 2 != 0]
 
 
 
