@@ -34,6 +34,11 @@ def odd_numbers(array_numbers):
 	return [num for num in array_numbers if num % 2 != 0]
 
 
-
+def long_words(words, minimum_length):
+	return_array = []
+	for word in words:
+		if len(word) >= minimum_length:
+			return_array.append(word)
+	return return_array
 
 

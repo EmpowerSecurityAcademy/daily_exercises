@@ -32,6 +32,13 @@ class TestReview(unittest.TestCase):
 		result = odd_numbers([1, 2, 4, 5, 7, 8])
 		self.assertEqual(result, [1, 5, 7])	
 
+	def test_long_words(self):
+
+		words = ["hello", "goodbye", "check", "it", "cat", "bla"]
+
+		result = long_words(words, 4)
+		self.assertEqual(result, ["hello", "goodbye", "check"])
+
 
 if __name__ == '__main__':
 	unittest.main()
